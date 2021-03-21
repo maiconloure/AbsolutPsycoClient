@@ -1,6 +1,8 @@
 services:
   sample:
     container_name: abst-psy-client
+    env_file: 
+      - .env
     build:
       context: .
       dockerfile: Dockerfile

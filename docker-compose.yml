@@ -1,0 +1,14 @@
+services:
+  sample:
+    container_name: abst-psy-client
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - 3001:3000
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    command: yarn start

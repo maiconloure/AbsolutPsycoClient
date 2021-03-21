@@ -17,11 +17,11 @@ export const Home = (): JSX.Element => {
     <HomeContainer>
       {modal
         ? <HomeModal>
-        <h1>Welcome to <b>ABSOLUT-PSYCO</b></h1>
+        <h1>Bem-vindo ao <b>ABSOLUT-PSYCO</b></h1>
         <img src={PsycoRandom} alt="psyco"/>
         <HomeForm>
           <input type="text" name="username" placeholder="Username" value={username} onChange={handleUsername} required />
-          <button onClick={() => handleHomeModal()} >Enter</button>
+          <button onClick={() => handleHomeModal()}>Entrar</button>
         </HomeForm>
       </HomeModal>
         : <Chat username={username} />

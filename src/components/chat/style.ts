@@ -13,6 +13,7 @@ export const ChatContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.8);
 `
 
 export const ChatBoard = styled.div`

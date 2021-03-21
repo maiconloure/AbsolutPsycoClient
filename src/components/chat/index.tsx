@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useRef, useState } from 'react'
 import { ChatBoard, ChatContainer, Messages, MessageForm } from './style'
 import { io } from 'socket.io-client'

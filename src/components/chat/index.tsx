@@ -6,9 +6,10 @@ import { io } from 'socket.io-client'
 import { v4 as uuid } from 'uuid'
 import { IChat, IChatMessage } from '../../Interfaces/IChat'
 import dotenv from 'dotenv'
+
 dotenv.config()
 const myId = uuid()
-const socket = io(process.env.SOCKET || 'https://abst-psyco.uc.r.appspot.com') // Iniciando conexão com o servidor do websocket
+const socket = io(process.env.SOCKET || 'http://localhost:8080') // Iniciando conexão com o servidor do websocket
 
 // Após realizado o handshake(HTTP upgrade) é aberta a conexão
 socket.on('connect', () => { console.info('[Socket.IO] Connected => A new connection has been established') })
